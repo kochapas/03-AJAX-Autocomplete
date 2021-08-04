@@ -112,7 +112,8 @@ a {
   width: auto;
   text-align: center;
   margin: 0 auto;
-  color: #EEEEEE
+  color: #EEEEEE;
+  z-index: 2;
 }
 
 .footer a {
@@ -124,6 +125,7 @@ a {
 .footer li {
   list-style: none;
   display: inline;
+  padding-top: 8px;
 }
 
 .footer a:hover {
