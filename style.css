@@ -96,7 +96,7 @@ a {
 
 .banner {
   background: url(https://source.unsplash.com/6MT4_Ut8a3Y/3000x2000);
-  height: 80VH;
+  height: 90VH;
   width: auto;
   background-size: cover;
   background-position: 50% 80%;
@@ -113,7 +113,6 @@ a {
   text-align: center;
   margin: 0 auto;
   color: #EEEEEE;
-  z-index: -1;
 }
 
 .footer a {
@@ -126,6 +125,10 @@ a {
   list-style: none;
   display: inline;
   padding-top: 16px;
+}
+
+.footer div {
+  padding-top: 8px;
 }
 
 .footer a:hover {
