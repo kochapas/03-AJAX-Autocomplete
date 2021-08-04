@@ -1,11 +1,14 @@
-const path = require("path");
+const path = require('path');
 
 module.exports = {
-  entry: path.resolve(__dirname, "./lib/index.js"),
+  entry: "./lib/index.js",
   mode: "development",
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "main.js"
   },
-  devtool: "sourcemap"
+  devServer: {
+    publicPath: '/dist/'
+  },
+  devtool: "source-map"
 };
