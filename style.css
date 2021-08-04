@@ -1,0 +1,199 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:700');
+
+/* Fontawesome */
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
+
+body {
+  /* display: flex;
+  height: 100vh; */
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-family: Open Sans;
+}
+
+#text-container {
+  height: 50vh;
+  /* width: 50vh; */
+}
+
+#text-container input {
+  width: 100%;
+  height: 32px;
+  line-height: 32px;
+  font-size: 24px;
+  padding: 0 4px;
+}
+
+h1, h2, h3, h4 {
+  font-family: Poppins;
+}
+
+a {
+  text-decoration: none;
+  color: #EEEEEE;
+}
+
+/* Custom design below! */
+.container {
+  width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.container p {
+  margin-bottom: 32px;
+}
+
+.btn-search {
+  padding: 8px 16px;
+  background-color: rgb(200, 70, 70);
+  border-radius: 8px;
+  background-image: linear-gradient(rgb(200, 70, 70),rgb(190, 40, 40),rgb(200, 70, 70));
+  color: #EEEEEE;
+  transition: background-color 0.5s, color 0.5s, padding 0.5s;
+  font-family: 'Pacifico', cursive;
+  text-shadow: 0 0 10px rgba(0,0,5,0.3);
+  margin-left: 5px;
+}
+
+.btn-search:hover {
+  animation-name: bg-col-change;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  background-color: rgb(200, 40, 40);
+}
+
+@keyframes bg-col-change {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 39px;
+  }
+}
+
+.banner {
+  background: url(https://source.unsplash.com/6MT4_Ut8a3Y/3000x2000);
+  height: 80VH;
+  width: auto;
+  background-size: cover;
+  background-position: 50% 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.footer {
+  background: #000000;
+  height: 20VH;
+  width: auto;
+  text-align: center;
+  margin: 0 auto;
+  color: #EEEEEE
+}
+
+.footer a {
+  color: rgb(200, 70, 70);
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.footer li {
+  list-style: none;
+  display: inline;
+}
+
+.footer a:hover {
+  color: rgb(200, 40, 40);
+}
+
+.banner h1, .banner p {
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0,0,5,0.3);
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.card {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.5s, transform 0.5s;
+  margin: 20px;
+}
+
+.card h3, .card p {
+  margin-bottom: 0px;
+  margin-top: 0px
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+}
+
+.card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.05);
+}
+
+#text-container li {
+  color: #EEEEEE;
+}
+
+#text-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#results {
+  padding: 0;
+}
+
+#results li {
+  list-style: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  z-index: 2;
+  padding-left: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 0px;
+}
+
+#results li a:hover {
+  color: rgb(200, 40, 40);
+}
+
