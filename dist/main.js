@@ -20,7 +20,11 @@ textbox.oninput = (event) => {
             ${word}
           </a>
         </li>`;
+<<<<<<< HEAD
         results.insertAdjacentHTML("afterbegin", element);
+=======
+        results.insertAdjacentHTML("beforeend", element);
+>>>>>>> 3167d94b7b3fc8b1bd5c32d494e553eae46337d9
       });
     });
 };
