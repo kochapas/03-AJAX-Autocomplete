@@ -16,7 +16,7 @@ textbox.oninput = (event) => {
       data.words.forEach((word) => {
         const element = `
         <li>
-          <a href="https://www.allrecipes.com/search/results/?search=${word}" target="_blank">
+          <a href="https://www.allrecipes.com/search?q=${word}" target="_blank">
             ${word}
           </a>
         </li>`;
@@ -29,7 +29,7 @@ const searchButton = document.querySelector(".btn-search");
 searchButton.addEventListener("click", (event) => {
   console.log(event);
   const word = document.querySelector("#search").value;
-  event.target.setAttribute("href", `https://www.allrecipes.com/search/results/?search=${word}`);
+  event.target.setAttribute("href", `https://www.allrecipes.com/search?q=${word}`);
 });
 
 /******/ })()
